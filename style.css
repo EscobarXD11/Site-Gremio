@@ -2,21 +2,22 @@
 
 /* Declaração da fonte Outfit */
 @font-face {
-  font-family: 'Outfit';
-  src: url('Outfit-VariableFont_wght.ttf') format('truetype');
+  font-family: 'Outfit'; /* Nome da fonte */
+  src: url('Outfit-VariableFont_wght.ttf') format('truetype'); /* Caminho para o arquivo da fonte */
   font-weight: normal;
   font-style: normal;
 }
 
 /* Declaração da fonte Young Serif */
 @font-face {
-  font-family: 'Young Serif';
-  src: url('YoungSerif-Regular.ttf') format('truetype');
+  font-family: 'Young Serif'; /* Nome da fonte */
+  src: url('YoungSerif-Regular.ttf') format('truetype'); /* Caminho para o arquivo da fonte */
   font-weight: normal;
   font-style: normal;
 }
 
 /* ===================== Estilo do Título Principal ===================== */
+
 
 /* ===================== Container Principal ===================== */
 
@@ -31,141 +32,155 @@ html, body {
   box-sizing: border-box;
 }
 
+
 .container {
   display: flex;
-}
 
-.container h1 {
-  font-family: 'Young Serif', serif;
+
+h1 {
+   font-family: 'Young Serif', serif; /* Fonte decorativa */
   color: rgb(255, 255, 255);
   margin-left: 24%;
   display: block;
   font-size: 50px;
-  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.7); /* Contorno para destaque */
   max-width: 50%;
 }
 
-.container p {
-  margin-left: 24%;
+  p {
+    margin-left: 24%;
   display: block;
-  margin-top: -25px;
-  font-size: 17px;
-  color: rgb(255, 255, 255);
-  font-family: 'Outfit', sans-serif;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-  max-width: 450px;
-}
+    margin-top: -25px;
+   font-size: 17px;
+    color: rgb(255, 255, 255);
+    font-family: 'Outfit', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 
-.container button {
-  margin-left: 39%;
-  color: ghostwhite;
-  background-color: rgb(52, 130, 248);
-  text-align: center;
-  width: 170px;
-  height: 40px;
-  border: none;
-  border-radius: 20px;
-  font-size: 16px;
-  cursor: pointer;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
+    max-width: 450px;
+  }
 
-.container button:hover {
-  background-color: rgb(40, 110, 255);
-  transform: translateY(-3px);
-}
+  button {
+    margin-left: 39%;
+    color: ghostwhite;
+    background-color: rgb(52, 130, 248);
+    text-align: center;
+    width: 170px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
 
-.container button:active {
-  transform: translateY(0px);
-}
+  button:hover {
+    background-color: rgb(40, 110, 255);
+    transform: translateY(-3px);
+  }
 
-.container img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  object-fit: cover;
-  z-index: -1;
-  max-height: 430px;
+  button:active {
+    transform: translateY(0px);
+  }
+
+  img {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+ 
+    object-fit: cover;
+    z-index: -1;
+    max-height: 430px;
+
+  }
+
+
+
 }
 
 nav {
   display: inline-block;
-  background-color: var(--cor5);
-  margin-top: 75px;
-  margin-left: 145px;
+     background-color: var(--cor5);
+   margin-top: 75px;
+    margin-left: 145px; /* cuidado com esse uso */
 }
-
 a {
-  box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.082);
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.082);
+
   padding: 8px;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   text-decoration: none;
   margin-bottom: 70px;
-  font-size: 18px;
-  transition-duration: 0.5s;
-}
+font-size: 18px;
+    transition-duration: 0.5s;
 
-a:hover {
-  padding: 5px;
-  border-radius: 5px;
-  background-color: #0e76ff;
 }
+ a:hover {
+ padding: 5px;
+   border-radius: 5px;
+   background-color: #0e76ff;
+
+ }
+
 
 /* ===================== Subtítulo ===================== */
 
-div h2 {
-  font-family: 'Young Serif', serif;
-  color: rgb(36, 168, 255);
-  font-size: 40px;
-  position: relative;
-  margin-left: 150px;
-  margin-top: -40px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  text-transform: capitalize;
+div {
+  h2 {
+    font-family: 'Young Serif', serif;
+    color: rgb(36, 168, 255);
+    font-size: 40px;
+    position: relative;
+    margin-left: 150px;
+    margin-top: -40px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+  }
 }
 
 /* ===================== Container Secundário ===================== */
 
 .container-2 {
   margin-top: -120px;
-}
 
-.container-2 h1 {
-  font-family: 'Outfit', sans-serif;
-  font-size: 40px;
-  text-align: center;
-  margin-top: 150px;
-}
+  h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 150px;
+  }
 
-.container-2 .aa {
-  color: rgb(70, 69, 69);
-  font-family: 'Outfit', sans-serif;
-  font-size: 20px;
-  margin-top: 10px;
-  text-align: center;
+  .aa {
+    color: rgb(70, 69, 69);
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+text-align: center;
+  }
 }
 
 /* ===================== Cards em Grid ===================== */
 
 .card-grid {
+
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   padding: 40px 20px;
   max-width: 1000px;
   margin: auto;
-}
 
-.card-grid h2 {
-  font-family: 'Outfit', sans-serif;
-  font-size: 25px;
-  margin-left: 10px;
-  margin-top: 10px;
-  color: #0e76ff;
+  h2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: #0e76ff;
+  }
 }
 
 .card {
@@ -184,54 +199,66 @@ div h2 {
 
 /* ===================== Rodapé ===================== */
 
+
 footer.cta {
-  width: 100%;
+width: 100%;
   background: #004080;
   color: white;
+  
   height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-footer.cta p {
-  font-size: 18px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-shadow: 1px 1px 1px black;
-}
 
-footer.cta a {
+    display: flex; /* ativa o flexbox */
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center; /* centraliza verticalmente (opcional) */
+
+  p {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+     text-shadow: 1px 1px 1px black;
+  }
+
+ a {
   text-decoration: none;
-  background-color: #004080;
-  box-shadow: 0px 0px white;
-}
+    background-color: #004080;
+    box-shadow: 0px 0px  white;
 
-footer.cta a:hover {
+ }
+
+a:hover {
   background-color: #0066ff;
-}
+  text-decoration: underline;
+    
 
-footer.cta ul {
-  text-align: center;
-  list-style: none;
-}
+ }
 
-footer.cta li {
-  display: inline;
-  padding: 10px;
-  background-color: #0e76ff;
-  margin-top: -40px;
-  margin-left: 12px;
-  border-radius: 5px;
-  text-decoration: none;
+  ul {
+       text-align: center;
+
+    list-style: none;
+  
+
+  }
+
+  li {
+    display: inline;
+    padding: 10px;
+     background-color: #0e76ff;
+     margin-top: -40px;
+     margin-left: 12px;
+     border-radius: 5px;
+     text-decoration: none;
+
+   
+  }
 }
 
 /* ===================== Estilo de Imagem ===================== */
-
 .simbolo-gremio {
   width: 170px;
   display: flex;
   margin: auto;
-  margin-top: 4vh;
+  margin-top: 4vh; /* 10% da altura da viewport */
 }
 
 /* ===================== Título Principal ===================== */
@@ -242,15 +269,15 @@ h1 {
 }
 
 .subtitulo {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
+  max-width: 800px;  /* aumenta o limite máximo para a largura */
+  margin: 0 auto;          /* centraliza o elemento */
+text-align: center;
   font-size: 18px;
   font-family: 'Outfit', sans-serif;
 }
 
-/* ===================== Vantagens - Container ===================== */
 
+/* ===================== Vantagens - Container ===================== */
 .container-vantagens {
   margin-top: 40px;
   display: flex;
@@ -262,18 +289,17 @@ h1 {
 }
 
 /* Bloco com imagem à esquerda e texto à direita */
-
 .vantagem {
   display: flex;
   align-items: center;
   gap: 30px;
   max-width: 1000px;
   width: 100%;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* quebra em telas pequenas */
 }
 
-/* Imagem */
 
+/* Imagem */
 .vantagem img {
   max-width: 500px;
   width: 100%;
@@ -284,14 +310,12 @@ h1 {
 }
 
 /* Inverte a ordem da imagem e texto */
-
 .vantagem.invertido {
   flex-direction: row-reverse;
   text-align: left;
 }
 
 /* Para telas pequenas, manter a ordem padrão empilhada */
-
 @media (max-width: 768px) {
   .vantagem.invertido {
     flex-direction: column;
@@ -303,8 +327,8 @@ h1 {
   }
 }
 
-/* Texto */
 
+/* Texto */
 .vantagem > div {
   flex: 1;
   min-width: 280px;
@@ -330,7 +354,6 @@ h1 {
 }
 
 /* Responsivo: imagem em cima, texto embaixo */
-
 @media (max-width: 768px) {
   .vantagem {
     margin-top: -30px;
@@ -359,23 +382,26 @@ h1 {
   }
 
   nav {
-    display: inline-block;
-    margin-top: 50px;
-    margin-left: 150px;
-    font-size: 14px;
-    padding-left: 10px
-;
-}
-
+ display: inline-block;
+ margin-top: auto;
+ margin-top: 50px;
+ margin-left: 160px;
+ font-size: 14px;
+ padding-left: 10px;
+  }
+  
 .simbolo-gremio {
-margin-top: 40px;
+  margin-top: 40px;
 }
 
 header {
-margin-top: -30px;
+  margin-top: -30px;
+
 }
 
 octa {
-text-align: center;
+  text-align: center;
 }
+
+
 }
