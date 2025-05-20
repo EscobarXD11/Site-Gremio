@@ -18,33 +18,49 @@
 
 /* ===================== Estilo do Título Principal ===================== */
 
-.seja {
-  font-family: 'Young Serif', serif; /* Fonte decorativa */
-  color: rgb(255, 255, 255);
-  margin-left: -690px;
-  margin-top: 100px;
-  font-size: 50px;
-  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.7); /* Contorno para destaque */
-}
 
 /* ===================== Container Principal ===================== */
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
 .container {
-  margin-top: -20px;
-  margin-left: -60px;
+  display: flex;
+
+
+h1 {
+   font-family: 'Young Serif', serif; /* Fonte decorativa */
+  color: rgb(255, 255, 255);
+  margin-left: 24%;
+  display: block;
+  font-size: 50px;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.7); /* Contorno para destaque */
+  max-width: 50%;
+}
 
   p {
-    margin-left: 255px;
+    margin-left: 24%;
+  display: block;
     margin-top: -25px;
-    width: 450px;
+   font-size: 17px;
     color: rgb(255, 255, 255);
     font-family: 'Outfit', sans-serif;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-    text-align: justify;
+
+    max-width: 450px;
   }
 
   button {
-    margin-left: 255px;
+    margin-left: 39%;
     color: ghostwhite;
     background-color: rgb(52, 130, 248);
     text-align: center;
@@ -68,15 +84,47 @@
   }
 
   img {
+    
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 63%;
+ 
     object-fit: cover;
     z-index: -1;
+    max-height: 430px;
+
   }
+
+
+
 }
+
+nav {
+  display: inline-block;
+     background-color: var(--cor5);
+   margin-top: 75px;
+    margin-left: 145px; /* cuidado com esse uso */
+}
+a {
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.082);
+
+  padding: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 70px;
+font-size: 18px;
+    transition-duration: 0.5s;
+
+}
+ a:hover {
+ padding: 5px;
+   border-radius: 5px;
+   background-color: #0e76ff;
+
+ }
+
 
 /* ===================== Subtítulo ===================== */
 
@@ -86,7 +134,7 @@ div {
     color: rgb(36, 168, 255);
     font-size: 40px;
     position: relative;
-    margin-left: 250px;
+    margin-left: 150px;
     margin-top: -40px;
     font-weight: 600;
     letter-spacing: 0.5px;
@@ -111,13 +159,14 @@ div {
     font-family: 'Outfit', sans-serif;
     font-size: 20px;
     margin-top: 10px;
-    margin-left: 320px;
+text-align: center;
   }
 }
 
 /* ===================== Cards em Grid ===================== */
 
 .card-grid {
+
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
@@ -150,36 +199,65 @@ div {
 
 /* ===================== Rodapé ===================== */
 
+
 footer.cta {
+width: 100%;
   background: #004080;
   color: white;
-  margin-top: 2700px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 40%;
-  object-fit: cover;
-  z-index: -1;
   
+  height: 100px;
+
+
+    display: flex; /* ativa o flexbox */
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center; /* centraliza verticalmente (opcional) */
 
   p {
-    margin-left: 50px;
-    margin-top: 140px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+     text-shadow: 1px 1px 1px black;
   }
 
-  .img-final {
-   margin-top: -100px;
-   margin-left: 600px;
+ a {
+  text-decoration: none;
+    background-color: #004080;
+    box-shadow: 0px 0px  white;
+
+ }
+
+a:hover {
+  background-color: #0066ff;
+    
+
+ }
+
+  ul {
+       text-align: center;
+
+    list-style: none;
+  
+
+  }
+
+  li {
+    display: inline;
+    padding: 10px;
+     background-color: #0e76ff;
+     margin-top: -40px;
+     margin-left: 12px;
+     border-radius: 5px;
+     text-decoration: none;
+
+   
   }
 }
 
 /* ===================== Estilo de Imagem ===================== */
-
 .simbolo-gremio {
   width: 170px;
-  margin-top: 120px;
-  margin-left: 640px;
+  display: flex;
+  margin: auto;
+  margin-top: 4vh; /* 10% da altura da viewport */
 }
 
 /* ===================== Título Principal ===================== */
@@ -189,93 +267,140 @@ h1 {
   text-align: center;
 }
 
-/* ===================== Vantagens - Container ===================== */
-
-.container-vantagens {
-  .a {
-    font-size: 22px;
-    margin-left: 670px;
-    top: -230px;
-    font-family: 'Outfit', sans-serif;
-    color: rgb(0, 0, 0);
-  }
-
-  p {
-    margin-left: 670px;
-    width: 400px;
-    font-size: 17px;
-    margin-top: -220px;
-    font-family: 'Outfit', sans-serif;
-  }
-
-  img {
-    width: 480px;
-    height: 340px;
-    object-fit: cover;
-    border-radius: 15px;
-    margin-left: 150px;
-    margin-top: 60px;
-  }
-}
-
-/* ===================== Outras Imagens ===================== */
-
-.socio {
-  width: 480px;
-  height: 340px;
-  object-fit: cover;
-  border-radius: 15px;
-  margin-left: 650px;
-  margin-top: 130px;
-}
-
-.decisoes {
-  width: 480px;
-  height: 340px;
-  object-fit: cover;
-  border-radius: 15px;
-  margin-left: 150px;
-  margin-top: 100px;
-}
-
-/* ===================== Subtítulos e Parágrafos ===================== */
-
 .subtitulo {
-  width: 690px;
-  text-align: start;
-  margin-left: 330px;
-  font-size: 17px;
+  max-width: 800px;  /* aumenta o limite máximo para a largura */
+  margin: 0 auto;          /* centraliza o elemento */
+text-align: center;
+  font-size: 18px;
   font-family: 'Outfit', sans-serif;
 }
 
-.h2-socio {
+
+/* ===================== Vantagens - Container ===================== */
+.container-vantagens {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Bloco com imagem à esquerda e texto à direita */
+.vantagem {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  max-width: 1000px;
+  width: 100%;
+  flex-wrap: wrap; /* quebra em telas pequenas */
+}
+
+
+/* Imagem */
+.vantagem img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Inverte a ordem da imagem e texto */
+.vantagem.invertido {
+  flex-direction: row-reverse;
+  text-align: left;
+}
+
+/* Para telas pequenas, manter a ordem padrão empilhada */
+@media (max-width: 768px) {
+  .vantagem.invertido {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .vantagem.invertido > div {
+    text-align: center;
+  }
+}
+
+
+/* Texto */
+.vantagem > div {
+  flex: 1;
+  min-width: 280px;
+}
+
+.vantagem h2,
+.vantagem p {
+  font-family: 'Outfit', sans-serif;
+  text-align: left;
+}
+
+.vantagem h2 {
   font-size: 22px;
-  margin-left: 150px;
-  top: -230px;
-  font-family: 'Outfit', sans-serif;
-  color: rgb(0, 0, 0);
+  color: #000;
+  margin-bottom: 10px;
+  margin-left: 3px;
 }
 
-.p-socio {
-  font-family: 'Outfit', sans-serif;
-  margin-left: 150px;
-  width: 400px;
-  font-size: 17px;
-  margin-top: -220px;
+.vantagem p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.5;
 }
 
-.h2-decisoes {
-  font-size: 22px;
-  margin-left: 670px;
-  top: -230px;
-  font-family: 'Outfit', sans-serif;
-  color: rgb(0, 0, 0);
+/* Responsivo: imagem em cima, texto embaixo */
+@media (max-width: 768px) {
+  .vantagem {
+    margin-top: -30px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .vantagem > div {
+    text-align: center;
+  }
+
+  .vantagem img {
+    margin: 0 auto;
+  }
+
+  .vantagem h2 {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .vantagem p {
+    max-width: 600px;
+    text-align: justify;
+  }
+
+  nav {
+ display: inline-block;
+ margin-top: auto;
+ margin-top: 50px;
+ margin-left: 150px;
+ font-size: 14px;
+ padding-left: 10px;
+  }
+  
+.simbolo-gremio {
+  margin-top: 40px;
 }
 
-.p-decisoes {
-  font-family: 'Outfit', sans-serif;
-  margin-left: 670px;
-  width: 400px;
-  font-size: 17px;
-  margin-top: -220px;
+header {
+  margin-top: -30px;
+
+}
+
+octa {
+  text-align: center;
+}
+
+
 }
