@@ -204,7 +204,10 @@ footer.cta {
 width: 100%;
   background: #004080;
   color: white;
+  
   height: 100px;
+
+
     display: flex; /* ativa o flexbox */
   justify-content: center; /* centraliza horizontalmente */
   align-items: center; /* centraliza verticalmente (opcional) */
@@ -313,102 +316,13 @@ text-align: center;
   text-align: left;
 }
 
-/* Para telas pequenas, manter a ordem padrão empilhada */
-@media (min-width: 401px) and (max-width: 768px) {
-  .vantagem.invertido {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .vantagem.invertido > div {
-    text-align: center;
-  }
-}
-
-
-/* Texto */
-.vantagem > div {
-  flex: 1;
-  min-width: 280px;
-}
-
-.vantagem h2,
-.vantagem p {
-  font-family: 'Outfit', sans-serif;
-  text-align: left;
-}
-
-.vantagem h2 {
-  font-size: 22px;
-  color: #000;
-  margin-bottom: 10px;
-  margin-left: 3px;
-}
-
-.vantagem p {
-  font-size: 18px;
-  color: #333;
-  line-height: 1.5;
-}
-
-/* Responsivo: imagem em cima, texto embaixo */
-@media (min-widht: 401px) and (max-width: 768px) {
-  .vantagem {
-    margin-top: -30px;
-    display: flex;
-    margin: auto;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .vantagem > div {
-    text-align: center;
-  }
-
-  .vantagem img {
-    margin: 0 auto;
-  }
-
-  .vantagem h2 {
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .vantagem p {
-    max-width: 600px;
-    text-align: justify;
-  }
-
-  nav {
- display: inline-block;
- margin-top: auto;
- margin-top: 50px;
- margin-left: 160px;
- font-size: 14px;
- padding-left: 10px;
-  }
-  
-.simbolo-gremio {
-  margin-top: 40px;
-}
-
-header {
-  margin-top: -30px;
-
-}
-
-octa {
-  text-align: center;
-}
-
-
-}
-
 @media (max-width: 400px) {
 
    nav {
     width: 400px;
-  transform: translateX(-135px);
+  transform: translateX(-133px) translateY(-10px); /* move pra esquerda e pra cima */
+   margin-top: 40px;
+
 
 
      
@@ -431,7 +345,7 @@ h2 {
      display: block;
    font-size: 24px;
     margin-top: -20px;
-    width: 430px;
+    width: 440px;
     margin-bottom: -40px;
   
 }
@@ -506,5 +420,96 @@ header {
 octa {
   text-align: center;
 }
+
+}
+
+/* Para telas pequenas, manter a ordem padrão empilhada */
+@media (max-width: 768px) {
+  .vantagem.invertido {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .vantagem.invertido > div {
+    text-align: center;
+  }
+}
+
+
+/* Texto */
+.vantagem > div {
+  flex: 1;
+  min-width: 280px;
+}
+
+.vantagem h2,
+.vantagem p {
+  font-family: 'Outfit', sans-serif;
+  text-align: left;
+}
+
+.vantagem h2 {
+  font-size: 22px;
+  color: #000;
+  margin-bottom: 10px;
+  margin-left: 3px;
+}
+
+.vantagem p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Responsivo: imagem em cima, texto embaixo */
+@media (max-width: 768px) {
+  .vantagem {
+    margin-top: -30px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .vantagem > div {
+    text-align: center;
+  }
+
+  .vantagem img {
+    margin: 0 auto;
+  }
+
+  .vantagem h2 {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .vantagem p {
+    max-width: 600px;
+    text-align: justify;
+  }
+
+  nav {
+ display: inline-block;
+ margin-top: auto;
+ margin-top: 50px;
+ margin-left: 160px;
+ font-size: 14px;
+ padding-left: 10px;
+  }
+  
+.simbolo-gremio {
+  margin-top: 40px;
+}
+
+header {
+  margin-top: -30px;
+
+}
+
+octa {
+  text-align: center;
+}
+
 
 }
