@@ -204,15 +204,13 @@ footer.cta {
 width: 100%;
   background: #004080;
   color: white;
-  
   height: 100px;
-
-
     display: flex; /* ativa o flexbox */
   justify-content: center; /* centraliza horizontalmente */
   align-items: center; /* centraliza verticalmente (opcional) */
 
   p {
+    color: white;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
      text-shadow: 1px 1px 1px black;
@@ -316,7 +314,7 @@ text-align: center;
 }
 
 /* Para telas pequenas, manter a ordem padrão empilhada */
-@media (max-width: 768px) {
+@media (min-width: 401px) and (max-width: 768px) {
   .vantagem.invertido {
     flex-direction: column;
     text-align: center;
@@ -354,7 +352,7 @@ text-align: center;
 }
 
 /* Responsivo: imagem em cima, texto embaixo */
-@media (max-width: 768px) {
+@media (min-widht: 401px) and (max-width: 768px) {
   .vantagem {
     margin-top: -30px;
     display: flex;
@@ -403,5 +401,110 @@ octa {
   text-align: center;
 }
 
+
+}
+
+@media (max-width: 400px) {
+
+   nav {
+    width: 400px;
+  transform: translateX(-135px);
+
+
+     
+
+  }
+
+.container {
+    flex-direction: column; /* empilha os elementos verticalmente */
+    align-items: center;     /* centraliza horizontalmente */
+    justify-content: center; /* centraliza verticalmente */
+ h1 {
+    font-size: 30px;
+    width: 300px;            /* se a largura for menor que 100% da tela */
+    text-align: center;      /* centraliza o texto dentro do bloco */
+margin-top: 60px;
+  
+}
+
+h2 {
+     display: block;
+   font-size: 24px;
+    margin-top: -20px;
+    width: 430px;
+    margin-bottom: -40px;
+  
+}
+
+p {
+
+  margin-top: 440px;
+    margin: 50px auto 0; /* centraliza horizontalmente */
+    max-width: 240px;
+    text-align: center;
+    font-size: 17px;
+
+}
+
+button {
+  margin-top: 30px;
+  font-size: 15px;
+  margin-left: 205px;
+}
+
+
+img {
+  display: flex;
+  height: 900px;
+}
+}
+
+  .vantagem {
+    margin-top: -30px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .vantagem > div {
+    text-align: center;
+  }
+
+  .vantagem img {
+    margin: 0 auto;
+  }
+
+  .vantagem h2 {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .vantagem p {
+    max-width: 600px;
+    text-align: justify;
+  }
+
+  nav {
+ display: inline-block;
+ margin-top: auto;
+ margin-top: 50px;
+ margin-left: 160px;
+ font-size: 14px;
+ padding-left: 10px;
+  }
+  
+.simbolo-gremio {
+  margin-top: 40px;
+}
+
+header {
+  margin-top: -30px;
+
+}
+
+octa {
+  text-align: center;
+}
 
 }
