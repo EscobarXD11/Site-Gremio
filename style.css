@@ -1,515 +1,286 @@
-/* ===================== Fontes Personalizadas ===================== */
-
-/* Declaração da fonte Outfit */
+/* === FONTES === */
 @font-face {
-  font-family: 'Outfit'; /* Nome da fonte */
-  src: url('Outfit-VariableFont_wght.ttf') format('truetype'); /* Caminho para o arquivo da fonte */
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'Outfit';
+  src: url('Outfit-VariableFont_wght.ttf') format('truetype');
 }
-
-/* Declaração da fonte Young Serif */
 @font-face {
-  font-family: 'Young Serif'; /* Nome da fonte */
-  src: url('YoungSerif-Regular.ttf') format('truetype'); /* Caminho para o arquivo da fonte */
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'Young Serif';
+  src: url('YoungSerif-Regular.ttf') format('truetype');
 }
 
-/* ===================== Estilo do Título Principal ===================== */
+/* === HEADER PRINCIPAL === */
 
-
-/* ===================== Container Principal ===================== */
-
-html, body {
-  margin: 0;
-  padding: 0;
+body {
+  padding: 0px;
+  margin: 0px;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-
-.container {
+.container-header {
+  background-image: url(midias/torcida-gremio-couto-pereira-e1723466513385.png);
+  background-size: cover;
+  background-position: center;
   display: flex;
-
-
-h1 {
-   font-family: 'Young Serif', serif; /* Fonte decorativa */
-  color: rgb(255, 255, 255);
-  margin-left: 24%;
-  display: block;
-  font-size: 50px;
-  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.7); /* Contorno para destaque */
-  max-width: 50%;
+  flex-direction: column;
+height: 300px;
+  padding: 20px;
+  box-shadow: 0px 0px 5px black;
 }
 
-  p {
-    margin-left: 24%;
-  display: block;
-    margin-top: -25px;
-   font-size: 17px;
-    color: rgb(255, 255, 255);
-    font-family: 'Outfit', sans-serif;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+.container-header h1 {
+  font-family: 'Outfit', sans-serif;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  font-size: 2.2em;
+  margin-top: 2%;
+  margin-left: 10%;
+}
 
-    max-width: 450px;
-  }
+.container-header h2 {
+  font-family: 'Outfit', sans-serif;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  font-size: 1.9em;
+ margin-top: -2%;
+ margin-bottom: 3%;
+   margin-left: 10%;
 
-  button {
-    margin-left: 39%;
-    color: ghostwhite;
-    background-color: rgb(52, 130, 248);
-    text-align: center;
-    width: 170px;
-    height: 40px;
-    border: none;
-    border-radius: 20px;
-    font-size: 16px;
-    cursor: pointer;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
+}
 
-  button:hover {
-    background-color: rgb(40, 110, 255);
-    transform: translateY(-3px);
-  }
+.container-header p {
+  margin-top: -2%;
+  color: white;
+  width: 300px;
+  text-align: center;
+  text-align: justify;
+    margin-left: 10%;
 
-  button:active {
-    transform: translateY(0px);
-  }
-
-  img {
     
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
- 
-    object-fit: cover;
-    z-index: -1;
-    max-height: 430px;
-
-  }
-
-
 
 }
 
+
+/* === BOTÃO === */
+button {
+  padding: 6px;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(49, 115, 255);
+  border: 0;
+    margin-left: 10%;
+
+}
+
+/* === NAV === */
 nav {
-  display: inline-block;
-     background-color: var(--cor5);
-   margin-top: 75px;
-    margin-left: 145px; /* cuidado com esse uso */
-}
-a {
-    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.082);
+  margin-top: 28px;
+  margin-bottom: -10px;
+    text-align: center;
 
-  padding: 8px;
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a {
   color: white;
   text-decoration: none;
-  margin-bottom: 70px;
-font-size: 18px;
-    transition-duration: 0.5s;
-
-}
- a:hover {
- padding: 5px;
-   border-radius: 5px;
-   background-color: #0e76ff;
-
- }
-
-
-/* ===================== Subtítulo ===================== */
-
-div {
-  h2 {
-    font-family: 'Young Serif', serif;
-    color: rgb(36, 168, 255);
-    font-size: 40px;
-    position: relative;
-    margin-left: 150px;
-    margin-top: -40px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    text-transform: capitalize;
-  }
+padding: 0px 15px;
+text-shadow: 1px 1px 1px black;
 }
 
-/* ===================== Container Secundário ===================== */
-
-.container-2 {
-  margin-top: -120px;
-
-  h1 {
-    font-family: 'Outfit', sans-serif;
-    font-size: 40px;
-    text-align: center;
-    margin-top: 150px;
-  }
-
-  .aa {
-    color: rgb(70, 69, 69);
-    font-family: 'Outfit', sans-serif;
-    font-size: 20px;
-    margin-top: 10px;
-text-align: center;
-  }
+nav a:hover {
+  text-decoration: underline;
 }
 
-/* ===================== Cards em Grid ===================== */
+/* === SÍMBOLO GRÊMIO === */
+.simbolo-gremio {
+  display: flex;
+  width: 15%;
+  margin: 30px auto;
+}
 
+/* === CONTAINER 2 === */
+.container-2 h1 {
+  margin-top: 3%;
+  text-align: center;
+}
+
+.container-2 h2 {
+  text-align: center;
+  font-size: 1.1em;
+}
+
+/* === CARDS === */
 .card-grid {
-
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
-  padding: 40px 20px;
-  max-width: 1000px;
-  margin: auto;
-
-  h2 {
-    font-family: 'Outfit', sans-serif;
-    font-size: 25px;
-    margin-left: 10px;
-    margin-top: 10px;
-    color: #0e76ff;
-  }
+  justify-content: center;
+  padding: 20px;
+   max-width: 960px; /* 3 cards de 280px + espaços */
+  margin: 0 auto; /* centraliza o grid */
 }
 
 .card {
-  font-family: 'Outfit', sans-serif;
-  background: white;
+  background-color: white;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
   padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: 0.3s;
-  cursor: pointer;
+  width: 280px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+  text-align: center;
+
+h2 {
+  color: rgb(0, 102, 255);
+  text-shadow: 1px 1px 1px rgba(0, 102, 255, 0.301);
+}
+
+
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: scale(1.05);
 }
 
-/* ===================== Rodapé ===================== */
-
-
-footer.cta {
-width: 100%;
-  background: #004080;
-  color: white;
-  
-  height: 100px;
-
-
-    display: flex; /* ativa o flexbox */
-  justify-content: center; /* centraliza horizontalmente */
-  align-items: center; /* centraliza verticalmente (opcional) */
-
-  p {
-    color: white;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-     text-shadow: 1px 1px 1px black;
-  }
-
- a {
-  text-decoration: none;
-    background-color: #004080;
-    box-shadow: 0px 0px  white;
-
- }
-
-a:hover {
-  background-color: #0066ff;
-  text-decoration: underline;
-    
-
- }
-
-  ul {
-       text-align: center;
-
-    list-style: none;
-  
-
-  }
-
-  li {
-    display: inline;
-    padding: 10px;
-     background-color: #0e76ff;
-     margin-top: -40px;
-     margin-left: 12px;
-     border-radius: 5px;
-     text-decoration: none;
-
-   
-  }
-}
-
-/* ===================== Estilo de Imagem ===================== */
-.simbolo-gremio {
-  width: 170px;
-  display: flex;
-  margin: auto;
-  margin-top: 4vh; /* 10% da altura da viewport */
-}
-
-/* ===================== Título Principal ===================== */
-
-h1 {
-  font-family: 'Outfit', sans-serif;
+#vantagens {
   text-align: center;
 }
 
 .subtitulo {
-  max-width: 800px;  /* aumenta o limite máximo para a largura */
-  margin: 0 auto;          /* centraliza o elemento */
-text-align: center;
-  font-size: 18px;
-  font-family: 'Outfit', sans-serif;
+  width: 650px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 3%;
 }
-
-
-/* ===================== Vantagens - Container ===================== */
 .container-vantagens {
-  margin-top: 40px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 50px;
-  width: 100%;
+  gap: 40px;
   padding: 20px;
 }
 
-/* Bloco com imagem à esquerda e texto à direita */
 .vantagem {
   display: flex;
-  align-items: center;
-  gap: 30px;
-  max-width: 1000px;
-  width: 100%;
-  flex-wrap: wrap; /* quebra em telas pequenas */
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* responsividade */
+
+.decisoes {
+    object-fit: cover; /* ou 'contain', depende do efeito desejado */
+  display: block;   /* remove espaço em branco embaixo da imagem */  
+height: 350px;
+ 
 }
 
-
-/* Imagem */
-.vantagem img {
-  max-width: 500px;
-  width: 100%;
-  height: auto;
-  border-radius: 15px;
-  object-fit: cover;
-  flex-shrink: 0;
 }
 
-/* Inverte a ordem da imagem e texto */
 .vantagem.invertido {
-  flex-direction: row-reverse;
-  text-align: left;
+  flex-direction: row-reverse; /* Inverte imagem e texto */
 }
 
-@media (max-width: 400px) {
-
-   nav {
-    width: 400px;
-  transform: translateX(-133px) translateY(-10px); /* move pra esquerda e pra cima */
-   margin-top: 40px;
-
-
-
-     
-
-  }
-
-.container {
-    flex-direction: column; /* empilha os elementos verticalmente */
-    align-items: center;     /* centraliza horizontalmente */
-    justify-content: center; /* centraliza verticalmente */
- h1 {
-    font-size: 30px;
-    width: 300px;            /* se a largura for menor que 100% da tela */
-    text-align: center;      /* centraliza o texto dentro do bloco */
-margin-top: 60px;
-  
+.vantagem img {
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
-h2 {
-     display: block;
-   font-size: 24px;
-    margin-top: -20px;
-    width: 440px;
-    margin-bottom: -40px;
-  
-}
-
-p {
-
-  margin-top: 440px;
-    margin: 50px auto 0; /* centraliza horizontalmente */
-    max-width: 240px;
-    text-align: center;
-    font-size: 17px;
-
-}
-
-button {
-  margin-top: 30px;
-  font-size: 15px;
-  margin-left: 205px;
-}
-
-
-img {
-  display: flex;
-  height: 900px;
-}
-}
-
-  .vantagem {
-    margin-top: -30px;
-    display: flex;
-    margin: auto;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .vantagem > div {
-    text-align: center;
-  }
-
-  .vantagem img {
-    margin: 0 auto;
-  }
-
-  .vantagem h2 {
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .vantagem p {
-    max-width: 600px;
-    text-align: justify;
-  }
-
-  nav {
- display: inline-block;
- margin-top: auto;
- margin-top: 50px;
- margin-left: 160px;
- font-size: 14px;
- padding-left: 10px;
-  }
-  
-.simbolo-gremio {
-  margin-top: 40px;
-}
-
-header {
-  margin-top: -30px;
-
-}
-
-octa {
-  text-align: center;
-}
-
-}
-
-/* Para telas pequenas, manter a ordem padrão empilhada */
-@media (max-width: 768px) {
-  .vantagem.invertido {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .vantagem.invertido > div {
-    text-align: center;
-  }
-}
-
-
-/* Texto */
-.vantagem > div {
-  flex: 1;
-  min-width: 280px;
-}
-
-.vantagem h2,
-.vantagem p {
-  font-family: 'Outfit', sans-serif;
-  text-align: left;
+.vantagem div {
+  max-width: 500px;
 }
 
 .vantagem h2 {
-  font-size: 22px;
-  color: #000;
+  font-size: 1.4em;
   margin-bottom: 10px;
-  margin-left: 3px;
 }
 
 .vantagem p {
-  font-size: 18px;
-  color: #333;
+  font-size: 1em;
   line-height: 1.5;
 }
 
-/* Responsivo: imagem em cima, texto embaixo */
-@media (max-width: 768px) {
-  .vantagem {
-    margin-top: -30px;
-    display: flex;
-    margin: auto;
-    flex-direction: column;
-    text-align: center;
+
+.cta {
+  display: block;
+  width: 100%;
+  background-color: rgba(0, 68, 255, 0.925);
+  padding: 15px 0;
+  text-align: center;
+  margin-top: 1%;
+}
+
+.cta p {
+  color: white;
+  margin: 0;
+  font-size: 1.0em;
+  text-shadow: 1px 1px 1px black;
+}
+
+.cta a {
+   font-size: 1.0em;
+  color: white;
+  text-decoration: none;
+}
+
+
+
+
+
+/* === RESPONSIVO (MOBILE) === */
+@media (max-width: 428px) {
+
+
+
+  .container-header h1 {
+    margin-top: 9%;
+    font-size: 2.0em;
   }
 
-  .vantagem > div {
-    text-align: center;
+  .container-header h2 {
+    font-size: 1.7em;
+    margin-top: -5%;
   }
 
-  .vantagem img {
-    margin: 0 auto;
-  }
-
-  .vantagem h2 {
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .vantagem p {
-    max-width: 600px;
-    text-align: justify;
-  }
-
-  nav {
- display: inline-block;
- margin-top: auto;
- margin-top: 50px;
- margin-left: 160px;
- font-size: 14px;
- padding-left: 10px;
+  .container-header p {
+    width: 90%;
   }
   
-.simbolo-gremio {
-  margin-top: 40px;
+  nav {
+    margin-top: 11%;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .simbolo-gremio {
+    width: 30%;
+  }
+
+  .subtitulo {
+    width: 330px;
+  }
+  .vantagem img {
+    display: block;
+    width: 100%;
+   margin: auto;
+  }
+
+.vantagem {
+  .decisoes {
+    
+    height: 260px;
+  }
+  }
 }
 
-header {
-  margin-top: -30px;
 
+/* Tablets */
+@media (min-width: 577px) and (max-width: 992px) {
+  .card {
+    width: 48%;
+    font-size: 1em;
+  }
 }
 
-octa {
-  text-align: center;
-}
 
-
-}

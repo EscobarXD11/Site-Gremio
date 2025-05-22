@@ -2,7 +2,7 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="favicon/favicon (1).ico" type="image/x-icon"> <!-- Ícone da aba -->
   <link rel="stylesheet" href="style.css"> <!-- CSS principal -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- AOS para animações de scroll -->
@@ -11,18 +11,13 @@
 
 <body>
   <!-- Cabeçalho com imagem e mensagem principal -->
-  <header class="container">
-    <img src="portaldogremista.com.br-gremio-divulgas-quantos-ingressos-ja-foram-vendidos-para-o-grenal-vai-lotar-gremio-divulga-ingressos-vendidos-grenal-vai-lotar.png" alt="Fundo torcedores">
-
+  <header class="container-header">
     <div data-aos="zoom-in-right">
-      <h1 >Seja Grêmio</h1>
-      <h2>Seja Parte da História!</h2>
+      <h1 id="titulo">Seja Grêmio</h1>
+      <h2 id="subtitulo">Seja Parte da História!</h2>
       <p>Ser sócio do Grêmio é muito mais do que apoio ao time; é fazer parte de uma história de conquistas, paixão e superação. Ao se associar, você fortalece a instituição e garante que o clube continue a brilhar nos campos e fora deles!</p>
       <button>Te associe aqui!</button> 
-    </div>
-  </header>
-
-  <nav>
+ <nav>
  <a href="#">Menu</a>
   <a href="#">Notícias</a>
  <a href="#">Fale Conosco</a>
@@ -30,8 +25,13 @@
 
   </nav>
 
+    </div>
+  </header>
+
+ 
+
   <!-- Logo centralizada -->
-  <img class="simbolo-gremio" src="Gremio_logo.svg.png" alt="">
+  <img class="simbolo-gremio" src="midias/Gremio_logo.svg.png" alt="">
 
   <!-- Seção de introdução -->
   <section class="container-2">
@@ -71,7 +71,8 @@
 
 
   <!-- Texto introdutório sobre vantagens -->
-  <h1>Vantagens de ser sócio:</h1>
+   
+  <h1 id="vantagens">Vantagens de ser sócio:</h1>
   <p class="subtitulo">Ser sócio do Grêmio é mais do que ter benefícios — é fazer parte da história, viver cada momento com o clube e mostrar que seu amor pelo Tricolor vai além das arquibancadas.</p>
 
   <!-- Vantagens com imagem e descrição -->
@@ -101,7 +102,7 @@
   <div class="vantagem">
              <div data-aos="zoom-in-right">
 
-    <img class="decisoes" src="midias/arena-gremio-860x484.webp" alt="">
+    <img class="decisoes" src="midias/Gremio-enfrenta-o-Ypiranga-na-tarde-deste-sabado.jpg" alt="">
         </div>
 
     <div>
@@ -116,9 +117,9 @@
   <!-- Rodapé -->
    
   <footer class="cta">
- <div data-aos="zoom-in">
+
 <p>Desenvolvido por <a  href="https://www.instagram.com/wesley_escobar11/" target="_blank">Wesley</a> para seu <a href="https://github.com/EscobarXD11" target="_blank">GitHub</a>.</p>
-</div>
+
   </footer>
 
   <!-- Script de inicialização das animações AOS -->
